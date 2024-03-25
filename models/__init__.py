@@ -1,0 +1,1 @@
+from models.movie_search_model import MovieSearchModel  # noqa
