@@ -34,3 +34,7 @@ poetry install
 ```bash
 behave
 ```
+
+TODO: BDD execution needs to be fixed. Currently it is not working as expected.
+
+JFYI: .env file is commited deliberately for the sake of simplicity. In real world scenario, it should be added to .gitignore file.
