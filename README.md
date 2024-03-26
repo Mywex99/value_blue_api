@@ -7,7 +7,7 @@ Given project structure allows us to separate the feature files, step definition
 
 In the `helpers` directory, we have the `basic_api_helper.py` and `movie_api_helper.py` file that contains the API client code. This code is used to make the API requests.
 
-In the `models` directory, we have the `movie_search_model.py` file that contains the Pydantic model for the movie object. It allows us to validate responses from the API. We can validate types, values, and the structure of the response.
+In the `models` directory, we have the `movie_search_model.py` file that contains the Pydantic model for the movie object. It allows us to validate responses from the API. We can validate types, values, and the structure of the response. This amazing library allows us to do even Contract Testing easily and effectively faster even then using PACT framework without creating any extra levels of complexity. 
 
 In the `tests` directory, we have the `features` directory that contains the feature files and the `steps` directory that contains the step definitions. The feature files are written in Gherkin language and contain the scenarios that we want to test. The step definitions are written in Python and contain the code that is executed when a step is matched.
 
@@ -35,6 +35,6 @@ poetry install
 behave
 ```
 
-TODO: BDD execution needs to be fixed. Currently it is not working as expected.
+TODO: BDD execution needs to be fixed. Currently it is working but not all scenarios are implemented and executed.
 
 JFYI: .env file is commited deliberately for the sake of simplicity. In real world scenario, it should be added to .gitignore file.
